@@ -20,15 +20,33 @@ a:visited {
   background-color: transparent;
   text-decoration: none;
 }
-.site-footer {
-background-color: #c1b0d1;
-text-align: center
-}
+
 .site-header {
-background-color: #c1b0d1;
-text-align: center
+  width: 100%;
+  background-color: #c1b0d1;
+  
+}
+.site-header >z{
+
+font-size: 15px;
+font-family: 'Roboto';
+  float: center;
+  display: inline-block;
+  width: 19%;
+  padding: 5px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  
+  
 }
 
+.site-footer {
+position: fixed;
+background-color: #c1b0d1;
+text-align: center;
+   bottom: 0;
+   width: 100%;
+}
 
         .butt {
             background-color: #8562a6;
@@ -45,36 +63,39 @@ text-align: center
 		font-size: 28px; font-family: 'Roboto'}
 		h2 { 
 		font-size: 28px; font-family: 'Roboto';
-		margin: 0px 0px 0px 24px; text-align: left}
+		margin: 0px 0px 0px 24px; text-align: left;}
 		
 		j2 {
 		font-size: 15px; font-family: 'Roboto';
-		margin: 0px 0px 0px 0px
+		margin: 0px 0px 0px 0px;
 }
 
 		f2 {
-		font-size: 12px; font-family: 'Roboto'
+		font-size: 12px; font-family: 'Roboto';
+		}
+		x2 {
+font-size: 10px; font-family: 'Roboto';
 		}
 		c2 {
-		font-size: 13.5px; font-family: 'Roboto'
+		font-size: 13.5px; font-family: 'Roboto';
 		}
 
 		p {
-		font-size: 15px; font-family: 'Roboto'
+		font-size: 15px; font-family: 'Roboto';
 }
 li {
-  display:inline; font-size: 17px; font-family: 'Roboto'
+  display:inline; font-size: 17px; font-family: 'Roboto';
 }
 .container {
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
       }
       img {
-        max-width: 100%
+        max-width: 100%;
       }
       .image {
-        flex-basis: 40%
+        flex-basis: 40%;
       }
       .text {
         font-size: 16px;
@@ -96,43 +117,26 @@ table, th, td {
 <body class="terminal">
 
 <header class="site-header">
-    <div class="header">
-
-  <f2 style= "margin: 0px 24px 0px 24px"> 
-
-<h2><a href="https://agrimadeedwania.github.io">Agrima Deedwania</a></h2>
-<p align="left" style= "margin: 0px 0px 0px 24px">B.Tech, IIT Delhi </br> JRS, Inito<p>
-              <ul vocab="https://schema.org/" typeof="BreadcrumbList", itemListElement="ListItem">
-            
-                
-					<li typeof="ListItem"><a href="https://agrimadeedwania.github.io">Home</a></li>
-                    
-                    <li typeof="ListItem"><a href="https://agrimadeedwania.github.io//research/">Research</a></li>
-                    
-                    <li typeof="ListItem"><a href="https://agrimadeedwania.github.io//contact/">Contact</a></li>
-					
-					<li typeof="ListItem"><a href="./Agrima_CV_dec22.pdf" target=”_blank” >CV</a></li>
-                
-          
-            
-            </ul>
-
-
-        </div>
+    <div class="site-header">
+<z><a href="https://agrimadeedwania.github.io"><b>Agrima Deedwania, <em>B.Tech</em></b></a> </z>
+<z><a href="https://agrimadeedwania.github.io"><b>Home</a> </b></z>
+<z><a href="https://agrimadeedwania.github.io/research/"><b>Research</a></b></z>
+<z><a href="https://agrimadeedwania.github.io/contact/"><b>Contact</a> </b></z>
+<z><a href="./Agrima_CV_dec22.pdf" target=”_blank” ><b>CV</a></b></z>
+  
+</div>
 </header>
-        
 
-   
-
-<h1></h1>
-
+     
+<h1></h1> <br>
+<main>
 <div class="container">
       <div class="image" style= "margin: 0px 12px 0px 24px">
         
     <img src="./photo_1.jpeg" style="border-radius:3%;max-width:90%;"/>
     <figcaption style="text-align:left">
         <c2> Pronouns: she/they </br>
-        <a href="https://agrimadeedwania.github.io", class="fa fa-envelope"></a> agrimadeedwania321@gmail.com </c2></figcaption>
+        <a href="mailto: agrimadeedwania321@gmail.com", class="fa fa-envelope"></a> agrimadeedwania321@gmail.com </c2></figcaption>
 
       </div>
       <div class="text">
@@ -182,6 +186,8 @@ I like to travel, play badminton and listen to Indie music.</p>
 </table>
 <p style= "margin: 0px 24px 0px 24px">
 </br>	
+
+</main>
 <footer class="site-footer">
     <div class="footer">
 
