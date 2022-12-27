@@ -74,6 +74,7 @@ a:hover {
   text-decoration: none;
 }
 
+
 body,
 td,
 th,
@@ -81,7 +82,8 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 14px;
+  margin: 0px
 }
 
 strong {
