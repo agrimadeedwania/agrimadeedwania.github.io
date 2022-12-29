@@ -11,6 +11,41 @@
   <link rel="stylesheet" type="text/css" href="https://agrimadeedwania.github.io/Files/stylesheet.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+<style>
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
 </head>
 
 <body>
@@ -58,7 +93,28 @@
       </td>
     </tr>
   </table>
-  <footer style= " text-align: center; position: fixed; bottom: 0;
+  <br> <br>
+  <p style="text-align:center">
+  <name><b>Want me to contact you?</b></name>
+	</p>
+<div class="container" style="margin: 10px 500px 40px 500px">
+  <form action="/action_page.php">
+    <label for="fname"><b>Name</b></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+    <label for="Email"><b>Email</b></label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+
+    <label for="message"><b>Message</b></label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+  <footer style= " text-align: center;
    width: 100%;">
     <div>
 
