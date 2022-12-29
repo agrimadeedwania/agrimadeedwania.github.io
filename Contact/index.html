@@ -13,18 +13,23 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 
 <style>
-
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 12px;
-  margin-bottom: 32px;
   resize: vertical;
+   margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 input[type=submit] {
@@ -34,6 +39,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  float: right;
 }
 
 input[type=submit]:hover {
@@ -45,8 +51,34 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-</style>
 
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -99,22 +131,38 @@ input[type=submit]:hover {
   <p style="text-align:center">
   <name><b>Get in Touch?</b></name>
 	</p>
-<div class="container" style="margin: 10px 500px 40px 500px">
+<div class="container" style="margin: 10px 100px 40px 100px">
   <form method="post" action="https://forms.un-static.com/forms/72bba4065670ca414ac0d0df66fd7b6efb5a3d5f">
-    <label for="fname"><b>Name</b></label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+    <div class="row">
+      <div class="col-25">
+       <label for="fname"><b>Name</b></label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
 
-
-    <label for="Email"><b>Email</b></label>
-    <input type="text" id="Email" name="Email" placeholder="Your Email..">
-
-
-    <label for="message"><b>Message</b></label>
-    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Email"><b>Email</b></label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Email" name="Email" placeholder="Your Email..">
+      </div>
+    </div>
+	
+    <div class="row">
+      <div class="col-25">
+        <label for="message"><b>Message</b></label>
+      </div>
+      <div class="col-75">
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+		</div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>	
 
   <footer style= " text-align: center; width: 100%;">
     <div>
