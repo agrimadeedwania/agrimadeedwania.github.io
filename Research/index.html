@@ -104,7 +104,16 @@
 			  are externally embedded with the complementary strand of the exported ssDNA. Upon the formation of double-stranded DNA, 
 			  the two cells would fuse. The CRN models were made using <a href="https://github.com/BuildACell/bioCRNpyler" target= "_blank"> BioCRNpyler</a>, 
 			  compartmentalization was introduced through<a href="https://github.com/BuildACell/subsbml" target= "_blank"> subSBML </a>
-			  and simulations were done using <a href="https://github.com/ananswam/bioscrape" target= "_blank">Bioscrape</a>. 
+			  and simulations were done using <a href="https://github.com/ananswam/bioscrape" target= "_blank">Bioscrape</a>. <br>
+			  An example of the designed subsystem is- The vesicle is encapsulated with cell extract, linker ssDNA and plasmid that can 
+			  express aHL protein. The input signal, aTc in the external environment will induce the expression of the gene, producing aHL. 
+			  The protein binds to the membrane and forms a channel through which ssDNA can be exported. This exported ssDNA acts as linker 
+			  which helps in the controlled fusion of vesicles. This controlled fusion can help us initiate protein expression in other vesicles.
+			  For a simple model to initiate protein expression, the liposome population 1 is encapsulated with gene expression of exsA, 
+			  induced in presence of aTc (present in the external environment). Liposome population 2 is encapsulated with a gene which expresses GFP, 
+			  which is activated only in presence of exsA, so there is no protein in this liposome as exsA is being expressed in liposome population 1.
+			  These are DNA-tethered liposomes. When the exported linker DNA reacts with its complementary strand, it initiates fusion of two 
+			  populations of liposome, thus exsA can induce the expression of GFP in the fused cell.
  <br> <br>
 			  <b>The code and models are available at my <a href="https://github.com/agrimadeedwania/DNAexp_vesiclefusion" target= "_blank">GitHub repository</a>.</b>
 
